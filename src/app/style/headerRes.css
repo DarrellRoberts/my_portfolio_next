@@ -1,0 +1,56 @@
+@media  screen and (max-width: 800px) {
+
+.z-10 {
+    padding: 0px;
+    /* height: 43px; */
+}
+
+@keyframes headerAni5 {
+    0% {width: 43px}
+    100% {width: 100%}
+}
+
+@keyframes headerAni6 {
+    0% {width: 100%}
+    100% {width: 43px}
+}
+
+@keyframes headerAni3 {
+0% {height: 43px}
+100% {height: 300px}
+}
+        
+@keyframes headerAni4 {
+0% {height: 300px}
+100% {height: 43px}
+}
+.fixed {
+    animation-duration: 0.75s;
+    animation: headerAni6 0.75s 1, headerAni4 0.75s 1;
+}
+.w-screen {
+    animation-duration: 0.75s;
+    animation: headerAni5 0.75s 1, headerAni3 0.75s 1;
+    height: 300px;
+    flex-direction: column;
+}
+.w-screen li {
+    margin: 0px;
+}
+.outArr {
+    transform: rotate(45deg);
+}
+.innArr {
+    transform: rotate(220deg);
+}
+
+@keyframes spinIn {
+    0% { transform: rotate(0deg)};
+    100% { transform: rotate(220deg)};
+    }
+    
+    @keyframes spinOut {
+    0% { transform: rotate(0deg)};
+    100% { transform: rotate(45deg)};
+    }
+}
