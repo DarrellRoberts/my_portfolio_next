@@ -1,54 +1,54 @@
-:where(.css-dev-only-do-not-override-6j9yrn).ant-modal .ant-modal-content {
+:where(.css-dev-only-do-not-override-1b0bdye).ant-modal .ant-modal-content {
 background-color: var(--mainColor);
 color: white
 }
-:where(.css-6j9yrn).ant-modal .ant-modal-content {
+:where(.css-1b0bdye).ant-modal .ant-modal-content {
     background-color: var(--mainColor);
     color: white
 }
-:where(.css-dev-only-do-not-override-6j9yrn).ant-modal .ant-modal-title {
+:where(.css-dev-only-do-not-override-1b0bdye).ant-modal .ant-modal-title {
     background-color: var(--mainColor);
     color: white
 }
-:where(.css-6j9yrn).ant-modal .ant-modal-title {
+:where(.css-1b0bdye).ant-modal .ant-modal-title {
     background-color: var(--mainColor);
     color: white
 }
 
-:where(.css-dev-only-do-not-override-6j9yrn).ant-btn-primary:not(:disabled):not(.ant-btn-disabled):hover {
+:where(.css-dev-only-do-not-override-1b0bdye).ant-btn-primary:not(:disabled):not(.ant-btn-disabled):hover {
     background-color: white;
     color: black;
 }
-:where(.css-dev-only-do-not-override-6j9yrn).ant-btn-default {
+:where(.css-dev-only-do-not-override-1b0bdye).ant-btn-default {
     background-color: white;
     color: black;
 }
-:where(.css-dev-only-do-not-override-6j9yrn).ant-btn-default:not(:disabled):not(.ant-btn-disabled) {
+:where(.css-dev-only-do-not-override-1b0bdye).ant-btn-default:not(:disabled):not(.ant-btn-disabled) {
     background-color: var(--mainColor);
     color: white;
     border-color: white;
     display: none;
 }
-:where(.css-dev-only-do-not-override-6j9yrn).ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
+:where(.css-dev-only-do-not-override-1b0bdye).ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
     color: black;
     border-color: black;
 }
 
-:where(.css-6j9yrn).ant-btn-primary:not(:disabled):not(.ant-btn-disabled):hover {
+:where(.css-1b0bdye).ant-btn-primary:not(:disabled):not(.ant-btn-disabled):hover {
     background-color: white;
     color: black;
 }
-:where(.css-6j9yrn).ant-btn-default {
+:where(.css-1b0bdye).ant-btn-default {
     background-color: white;
     color: black;
 }
-:where(.css-6j9yrn).ant-btn-default:not(:disabled):not(.ant-btn-disabled) {
+:where(.css-1b0bdye).ant-btn-default:not(:disabled):not(.ant-btn-disabled) {
     background-color: var(--mainColor);
     color: white;
     border-color: white;
     display: none;
 }
-:where(.css-6j9yrn).ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
+:where(.css-1b0bdye).ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
     color: black;
     border-color: black;
 }
