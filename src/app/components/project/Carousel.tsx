@@ -6,8 +6,8 @@ import QueueAnim from 'rc-queue-anim';
 import { Popover } from "antd"
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import PropTypes from 'prop-types';
-import '../../style/Carousel.css';
-import '../../style/CarouselRes.css';
+import '../../style/carousel.css';
+import '../../style/carouselRes.css';
 
 const Element = BannerAnim.Element;
 

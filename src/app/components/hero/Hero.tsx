@@ -1,7 +1,7 @@
 "use client";
 
-import "../../style/Hero.css";
-import "../../style/HeroRes.css";
+import "../../style/hero.css";
+import "../../style/heroRes.css";
 
 import { DownOutlined } from "@ant-design/icons";
 

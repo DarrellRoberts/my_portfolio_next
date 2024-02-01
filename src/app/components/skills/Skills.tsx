@@ -2,8 +2,8 @@ import Frontend from "./Frontend";
 import Backend from "./Backend";
 import Database from "./Database";
 import Tools from "./Tools";
-import "../../style/Skills.css";
-import "../../style/SkillsRes.css";
+import "../../style/skills.css";
+import "../../style/skillsRes.css";
 
 const Skills = () => {
   return (

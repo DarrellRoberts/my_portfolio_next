@@ -1,4 +1,4 @@
-import "../../style/Skills.css"
+import "../../style/skills.css"
 import { Popover } from "antd";
 
 const Database:React.FC = () => {
