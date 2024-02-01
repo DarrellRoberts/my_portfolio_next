@@ -3,13 +3,11 @@
 import { useState, useRef } from 'react';
 import BannerAnim from 'rc-banner-anim';
 import QueueAnim from 'rc-queue-anim';
-import { TweenOneGroup } from 'rc-tween-one';
 import { Popover } from "antd"
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import PropTypes from 'prop-types';
 import '../../style/Carousel.css';
 import '../../style/CarouselRes.css';
-import TweenOne from "rc-tween-one";
 
 const Element = BannerAnim.Element;
 
@@ -272,17 +270,11 @@ const Carousel = ({ className = 'details-switch-demo' }) => {
       </QueueAnim>
     </Element>
   ));
-
+console.log(showInt)
   return (
     <>
     <div className="bg-primary">
     <div className={className ? `${className}-wrapper projectCon` : `bg-primary h-screen`} style={{ background: mapArray[showInt].background }}>
-    <TweenOne
-        key="0"
-        animation={{ opacity: 1 }}
-        className="code-box-shape"
-          style={{ opacity: 0 }}
-      />
     <h3 key="a"
     className="projectTitle">Portfolio</h3>
       <div
@@ -315,11 +307,10 @@ const Carousel = ({ className = 'details-switch-demo' }) => {
         >
           {textChildren}
         </BannerAnim>
-        <TweenOneGroup enter={{ opacity: 0, type: 'from' }} leave={{ opacity: 0 }}>
           {showInt > 0 && (
-          <LeftOutlined style={{color: "black"}} type="left" key="left" onClick={onLeft} />)}
-          {showInt < mapArray.length - 1 && (<RightOutlined style={{color: "black"}} type="right" key="right" onClick={onRight} />)}
-        </TweenOneGroup>
+          <LeftOutlined style={{color: "black", opacity: "1"}} type="left" key="left" onClick={onLeft} />)}
+          {showInt < mapArray.length - 1 && 
+          (<RightOutlined style={{color: "black", opacity: "1"}} type="right" key="right" onClick={onRight} />)}
       </div>
     </div>
     </div>

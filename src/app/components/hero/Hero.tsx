@@ -3,12 +3,11 @@
 import "../../style/Hero.css";
 import "../../style/HeroRes.css";
 
-// import Back from "../../assets/background.mp4";
 import { DownOutlined } from "@ant-design/icons";
 
 export default function Hero() {
     return (
-<div className="heroBack">
+<div className="heroBack bg-black">
         {/* {Back ? (
         <video className="vidBack" loop={true} autoPlay={true} muted>
           <source src={Back} type="video/mp4" />
