@@ -11,13 +11,13 @@ return (
     href="https://www.github.com/DarrellRoberts" 
     target="_blank" 
     rel="noreferrer"> 
-    <picture><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/github.svg" width="95" height="95" /></picture></a> 
+    <picture><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/github.svg" width="95" height="95" alt="github" /></picture></a> 
     <a
     className="ml-10 hover:rotate-45 transition-all brightness-0" 
     href="https://www.linkedin.com/in/droberts-developer" 
     target="_blank" 
     rel="noreferrer"> 
-    <picture><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" width="95" height="95" /></picture></a>
+    <picture><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" width="95" height="95" alt="linkedin" /></picture></a>
 </p>
 </>
 )
