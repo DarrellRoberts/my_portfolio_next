@@ -1,6 +1,5 @@
 "use client"
 
-import "../../style/About.css"
 import { useState } from "react"
 import Profilbildbw from "../../assets/Profilbildbw.jpg"
 import { LoadingOutlined } from "@ant-design/icons"
@@ -10,6 +9,7 @@ import Education from "./CirclesDE/Education";
 import Experience from "./CirclesDE/Experience";
 import Image from "next/image";
 
+import "../../style/about.css"
 import "../../style/aboutRes.css"
 
 const AboutTest: React.FC = () => {
