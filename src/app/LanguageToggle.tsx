@@ -8,13 +8,12 @@ import "./style/languageToggle.css"
 const LanguageToggle: React.FC = () => {
 const [showGerman, setShowGerman] = useState<boolean>(false)
 
-const path = window.location.pathname
-
 useEffect (() => {
-  if (path === "/de") {
+  if (typeof window !== "undefined") {
+    const path = window.location.pathname;
+        if (path === "/de") {
     setShowGerman(true)
-  } else {
-    setShowGerman(false)
+    }
   }
 }, [])
 console.log(showGerman)
