@@ -6,7 +6,6 @@ import QueueAnim from 'rc-queue-anim';
 import { Popover } from "antd"
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import PropTypes from 'prop-types';
-
 import '../../style/carousel.css';
 import '../../style/carouselRes.css';
 
@@ -20,74 +19,32 @@ interface data {
 }
 
 const textData = [
-{
-content: "Use the arrows to navigate through my previous or ongoing projects.",
-title: 'Portfolio Carousel',
-},
-{
-  content: "The BookClub Brothers is a website I created that is dedicated to a bookclub I formed with my old school friends in 2020. We all live in different countries so formed the club as a way of keeping in touch, whilst also reading fantastic books. This is a Full Stack project and so far has the following capabilities: jwt account registration and login, Cloudinary photo upload, user statistics, submit and edit book ratings, new book suggestion and book randomiser. This is my current project so bear with me if it's not complete. Stay tuned!",
-  title: 'The BookClub Brothers (Solo Project - Current Project)',
-  stack: (
-  <div className="flex justify-evenly mt-3">
-  <Popover title="React">
-  <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg" width="50" height="50" alt="React" />
-  </Popover>
-  <Popover title="TypeScript"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg" width="50" height="50" alt="TypeScript" />
-  </Popover>
-  <Popover title="Tailwind CSS">
-<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/tailwindcss-colored.svg" width="50" height="50" alt="TailwindCSS" />
-  </Popover>
-  </div>
-  ),
-  link: "https://bookclub-brothers.netlify.app/",
-  Githublink:"https://github.com/DarrellRoberts/BookClubBrothers_Frontend"
-  ,
+  {
+    content: "Verwende die Pfeile, um durch meine bisherigen oder laufenden Projekte zu navigieren.",
+    title: 'Portfolio',
   },
   {
-    content: "This is the API I created for the BookClub Brothers website.",
-    title: 'The BookClub Brothers API (Solo Project)',
+    content: "Die BookClub Brothers ist eine Website, die ich erstellt habe und die meinem Buchclub gewidmet ist, den ich 2020 mit meinen alten Schulfreunden gegründet habe. Wir leben alle in verschiedenen Ländern, daher haben wir den Club als Möglichkeit geschaffen, in Kontakt zu bleiben, während wir gleichzeitig fantastische Bücher lesen. Dies ist ein Full-Stack-Projekt und verfügt bisher über folgende Funktionen: JWT-Kontoanmeldung und -anmeldung, Cloudinary-Fotoupload, Benutzerstatistiken, Einreichen und Bearbeiten von Buchbewertungen, neue Buchvorschläge und Buchzufallsgenerator.",
+    title: 'The BookClub Brothers (Soloprojekt)',
     stack: (
-      <div className="flex justify-evenly mt-3">
-      <Popover title="MongoDB">
-      <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mongodb-colored.svg" width="50" height="50" alt="MongoDB" />
-      </Popover>
-      <Popover title="Express.js">
-      <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/express-colored.svg" width="50" height="50" alt="Express" />
-      </Popover>
-      <Popover title="Node.js">
-      <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg" width="50" height="50" alt="NodeJS" />
-      </Popover >
-      </div>
-      ),
-    link: "https://bookclubbrothers-backend.onrender.com/books",
-    Githublink:"https://github.com/DarrellRoberts/BookClubBrothers_Backend-API",
+    <div className="flex justify-evenly mt-3">
+    <Popover title="React">
+    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg" width="50" height="50" alt="React" />
+    </Popover>
+    <Popover title="TypeScript"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg" width="50" height="50" alt="TypeScript" />
+    </Popover>
+    <Popover title="Tailwind CSS">
+  <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/tailwindcss-colored.svg" width="50" height="50" alt="TailwindCSS" />
+    </Popover>
+    </div>
+    ),
+    link: "https://bookclub-brothers.netlify.app/",
+    Githublink:"https://github.com/DarrellRoberts/BookClubBrothers_Frontend"
+    ,
     },
 {
-content: "TeamUp is an app I created with three other group members at my Full-stack Developer Bootcamp. It's designed for users new to a city in Germany and want to meet new people via sports. The app has many features, such as: account creation and login, profile editing, user rating, badges, searching for events, joining events, creating events, liking events, submitting comments, replying to comments and more. We were selected to present this project at the end of the bootcamp to an audience of over 150 people. I along with another team member worked primarily on the Front-end, whilst our other two group members worked on the Back-end",
-title: 'TeamUp (Group Project - 4)',
-stack: (
-<div className="flex justify-evenly mt-3">
-<Popover title="MongoDB">
-<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mongodb-colored.svg" width="50" height="50" alt="MongoDB" />
-</Popover>
-<Popover title="Express.js">
-<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/express-colored.svg" width="50" height="50" alt="Express" />
-</Popover>
-<Popover title="React">
-<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg" width="50" height="50" alt="React" />
-</Popover>
-<Popover title="Node.js">
-<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg" width="50" height="50" alt="NodeJS" />
-</Popover >
-</div>
-),
-link: "https://teamup-de.netlify.app/",
-Githublink:"https://github.com/hari-pace/TeamUp"
-,
-},
-{
-content: "This Pokifight game was created by myself and another group member. I took on the role of the Front-end developer whilst they took over the Back-end. We used a pokemon API in order to fetch and display over 800 characters. Then we added multiple features, such as: username entry, enable and disable soundtrack, player selection, tutorial, opponent randomiser, game mechanics and a dynamic player leaderboard.",
-title: 'Pokifight Game (Group Project - 2)',
+content: "Das ist die von mir erstellte API für die Website der BookClub Brothers.",
+title: 'The BookClub Brothers API (Soloprojekt)',
 stack: (
   <div className="flex justify-evenly mt-3">
   <Popover title="MongoDB">
@@ -96,7 +53,49 @@ stack: (
   <Popover title="Express.js">
   <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/express-colored.svg" width="50" height="50" alt="Express" />
   </Popover>
-  <Popover title="React">
+  <Popover title="Node.js">
+  <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg" width="50" height="50" alt="NodeJS" />
+  </Popover >
+  </div>
+  ),
+link: "https://bookclubbrothers-backend.onrender.com/books",
+Githublink:"https://github.com/DarrellRoberts/BookClubBrothers_Backend-API",
+},
+{
+  content: "TeamUp ist eine App, die ich mit drei anderen Gruppenmitgliedern während meines Full-Stack Developer Bootcamps erstellt habe. Sie ist für Benutzer konzipiert, die über Sport neue Leute kennenlernen möchten. Die App verfügt über viele Funktionen, darunter: Kontoerstellung und -anmeldung, Profilbearbeitung, Benutzerbewertung, Abzeichen, Suche nach Veranstaltungen, Teilnahme an Veranstaltungen, Erstellung von Veranstaltungen, Liken von Veranstaltungen, Abgeben von Kommentaren, Beantworten von Kommentaren und mehr. ",
+  title: 'TeamUp (Gruppenprojekt - 4)',
+  stack: (
+  <div className="flex justify-evenly mt-3">
+  <Popover title="MongoDB">
+  <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mongodb-colored.svg" width="50" height="50" alt="MongoDB" />
+  </Popover>
+  <Popover title="Express.js">
+  <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/express-colored.svg" width="50" height="50" alt="Express" />
+  </Popover>
+  <Popover title="React.js">
+  <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg" width="50" height="50" alt="React" />
+  </Popover>
+  <Popover title="Node.js">
+  <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg" width="50" height="50" alt="NodeJS" />
+  </Popover >
+  </div>
+  ),
+  link: "https://teamup-de.netlify.app/",
+  Githublink:"https://github.com/hari-pace/TeamUp"
+  ,
+  },
+{
+content: "Dieses Pokifight-Spiel wurde von mir und einem anderen Gruppenmitglied erstellt. Ich habe die Rolle des Frontend-Entwicklers übernommen, während sie sich um das Backend gekümmert haben. Wir haben eine Pokémon-API verwendet, um über 800 Charaktere abzurufen und anzuzeigen. Dann haben wir mehrere Funktionen hinzugefügt, wie zum Beispiel: Benutzernameneingabe, Aktivieren und Deaktivieren des Soundtracks, Spieler-Auswahl, Tutorial, Zufallsgenerator für Gegner, Spielmechanik und eine dynamische Spieler-Bestenliste.",
+title: 'Pokifight Game (Gruppenprojekt - 2)',
+stack: (
+  <div className="flex justify-evenly mt-3">
+  <Popover title="MongoDB">
+  <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mongodb-colored.svg" width="50" height="50" alt="MongoDB" />
+  </Popover>
+  <Popover title="Express.js">
+  <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/express-colored.svg" width="50" height="50" alt="Express" />
+  </Popover>
+  <Popover title="React.js">
   <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg" width="50" height="50" alt="React" />
   </Popover>
   <Popover title="Node.js">
@@ -108,11 +107,11 @@ link: "https://golden-fudge-4d4499.netlify.app/",
 Githublink: "https://github.com/DarrellRoberts/pokifight_frontend",
   },
 {
-content: "Using TypeScript I created a pirate-themed tool to track either you personal or business to-dos. Looking at other similar applications or to-do lists, it struck me at how dull and uninspiring they were. Therefore, I chose to go with a pirate-theme to make it more interesting and to actually make the user want to return to their to-do list.",
-title: 'Pirate-themed Work Management Tool (Solo Project)',
+content: "Unter Verwendung von TypeScript habe ich ein Tool mit einem Piraten-Thema erstellt, um entweder Ihre persönlichen oder geschäftlichen Aufgaben zu verfolgen. Beim Betrachten anderer ähnlicher Anwendungen oder To-Do-Listen ist mir aufgefallen, wie langweilig und wenig inspirierend sie waren. Daher habe ich mich entschieden, ein Piraten-Thema zu verwenden, um es interessanter zu gestalten und den Benutzer tatsächlich dazu zu bringen, zu seiner To-Do-Liste zurückzukehren",
+title: 'Arbeitsmanagement-Tool (Soloprojekt)',
 stack: (
   <div className="flex justify-evenly mt-3">
-  <Popover title="React">
+  <Popover title="React.ts">
   <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg" width="50" height="50" alt="React" />
   </Popover>
   <Popover title="TypeScript"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg" width="50" height="50" alt="TypeScript" />
@@ -126,8 +125,8 @@ link: "",
 Githublink: "https://github.com/DarrellRoberts/pirate-work-management-tool",
       },
 {
-  content: "That was just a handful of my projects but be sure to come back as I update this portfolio regularly.",
-  title: 'I hope you saw something you liked!',
+  content: "Das war nur eine Handvoll meiner Projekte, aber schaue immer wieder vorbei, da ich dieses Portfolio regelmäßig aktualisiere.",
+  title: 'Ich hoffe, Du hast etwas gefunden, das Dir gefällt!',
 }
     ]
 ;
@@ -271,11 +270,11 @@ const Carousel = ({ className = 'details-switch-demo' }) => {
       </QueueAnim>
     </Element>
   ));
-console.log(showInt)
+
   return (
     <>
     <div className="bg-primary">
-    <div className={className ? `${className}-wrapper projectCon` : `bg-primary h-screen`} style={{ background: mapArray[showInt].background }}>
+    <div className={className ? `${className}-wrapper projectCon` : `bg-primary h-screen projectCon`} style={{ background: mapArray[showInt].background }}> 
     <h3 key="a"
     className="projectTitle">Portfolio</h3>
       <div
@@ -309,9 +308,8 @@ console.log(showInt)
           {textChildren}
         </BannerAnim>
           {showInt > 0 && (
-          <LeftOutlined style={{color: "black", opacity: "1"}} type="left" key="left" onClick={onLeft} />)}
-          {showInt < mapArray.length - 1 && 
-          (<RightOutlined style={{color: "black", opacity: "1"}} type="right" key="right" onClick={onRight} />)}
+          <LeftOutlined style={{color: "black"}} type="left" key="left" onClick={onLeft} />)}
+          {showInt < mapArray.length - 1 && (<RightOutlined style={{color: "black"}} type="right" key="right" onClick={onRight} />)}
       </div>
     </div>
     </div>

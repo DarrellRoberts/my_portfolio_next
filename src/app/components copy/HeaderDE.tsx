@@ -2,19 +2,19 @@
 
 import "../style/header.css"
 import "../style/headerRes.css"
-
 import { useEffect, useState } from "react";
 import { LeftOutlined } from "@ant-design/icons";
 import { useMediaQuery } from "react-responsive";
 
-export default function Header() {
-    const [scrollPosition, setScrollPosition] = useState(0);
-    const [max, setMax] = useState(true);
-    const [startFade, setStartFade] = useState(false)
-    
+
+const HeaderDE: React.FC = () => {
+const [scrollPosition, setScrollPosition] = useState(0);
+const [max, setMax] = useState(true);
+const [startFade, setStartFade] = useState(false)
+
     const handleDesktop = useMediaQuery({
-        query: "(min-device-width: 801px)"
-    });
+    query: "(min-device-width: 801px)"
+});
 
     const handleFade = () => {
         const time = setTimeout(() => {
@@ -22,7 +22,7 @@ export default function Header() {
         }, 1300);
         return () => clearTimeout(time)
     }
-    
+
     const handleFadeOut = () => {
             setStartFade(false)
     }
@@ -39,17 +39,18 @@ export default function Header() {
     };
     
     useEffect(() => {
+    // Attach the event listener when the component mounts
     window.addEventListener('scroll', handleScroll);
     handleFade();
+    // Clean up the event listener when the component unmounts
     return () => {
     window.removeEventListener('scroll', handleScroll);
     };
     },
      []);
-
+    scrollPosition;
 return (
-
-<header>
+    <>
 {handleDesktop ?
 max ? (
 <ul className="w-screen bg-primary z-10 flex justify-evenly items-center text-center border-white border-2">
@@ -60,11 +61,10 @@ onClick={() =>
     behavior: "smooth",
         })
 }
->
-<li 
-className={`listHeader ${startFade ? "animate" : "hidden"}`}
->Home</li>
-</a>
+><li 
+className={`listHeader ${startFade ? "animate" : "hidden"}`}>
+Start
+    </li></a>
 <a
 onClick={() =>
     window.scrollTo({
@@ -74,8 +74,7 @@ onClick={() =>
 }>
 <li 
 className={`listHeader ${startFade ? "animate" : "hidden"}`}>
-About</li>
-</a>
+Über mich</li></a>
 <a
 onClick={() =>
     window.scrollTo({
@@ -83,8 +82,7 @@ onClick={() =>
     behavior: "smooth",
         })
 }
->
-    <li 
+><li 
 className={`listHeader ${startFade ? "animate" : "hidden"}`}>
 Portfolio</li></a>
 <a              
@@ -96,7 +94,8 @@ onClick={() =>
 }>
 <li 
 className={`listHeader ${startFade ? "animate" : "hidden"}`}>
-Skills</li></a>
+Fähigkeiten</li>
+</a>
 <a
 onClick={() =>
     window.scrollTo({
@@ -104,12 +103,10 @@ onClick={() =>
     behavior: "smooth",
         })
 }
->
-<li 
+><li 
 className={`listHeader ${startFade ? "animate" : "hidden"}`}>
-Contact
-</li>
-</a>
+Kontakt</li>
+    </a>
 </ul>
 ) : (
 <div className="p-8 fixed z-10 border-2 header-transition">
@@ -118,9 +115,13 @@ onClick={() => {setMax(true); handleFade()}}
 className="innArr"
 /> 
 </div>    
-) : (
+)
+: (
     <ul></ul>
-)}  
-</header>
-    )
+)}
+</>
+)
 }
+
+export default HeaderDE
+

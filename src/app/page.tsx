@@ -1,19 +1,23 @@
-import Header from "@/app/components/Header";
+import LanguageToggle from "./LanguageToggle";
 import Hero from "@/app/components/hero/Hero";
 import About from "@/app/components/about/About";
-import Project from "@/app/components/project/Projects";
 import Skills from "./components/skills/Skills";
 import Contact from "./components/contact/Contact";
+import dynamic from "next/dynamic"
+
+const NoSSRProjects = dynamic(() => import("./components/project/Projects"), { ssr: false})
+const NoSSRHeader = dynamic(() => import("./components/Header"), { ssr: false})
 
 export default function Home() {
   return (
     <html>
       <body>
-        <Header />
+        <NoSSRHeader />
         <main>
+          <LanguageToggle />
           <Hero />
           <About />
-          <Project />
+          <NoSSRProjects />
           <Skills />
         </main>
         <footer>
