@@ -4,17 +4,17 @@ import "../../style/hero.css";
 import "../../style/heroRes.css";
 
 import { DownOutlined } from "@ant-design/icons";
+import Back from "../../assets/background.mp4"
 
 export default function Hero() {
     return (
-<div className="heroBack bg-black">
-        {/* {Back ? (
+<div className="heroBack">
+        {Back ? (
         <video className="vidBack" loop={true} autoPlay={true} muted>
           <source src={Back} type="video/mp4" />
         </video>
-        )} */}
-        <div className="vidBack">
-        </div>
+        ) : <div className="vidBack">
+          </div>}
         <div className="name">
           <h1>
             Darrell <br /> Roberts
@@ -24,7 +24,7 @@ export default function Hero() {
           <DownOutlined
             onClick={() =>
               window.scrollTo({
-                top: 1000,
+                top: 1100,
                 behavior: "smooth",
               })
             }

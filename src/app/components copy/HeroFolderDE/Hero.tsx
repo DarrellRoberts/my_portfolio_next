@@ -2,14 +2,19 @@
 
 import "../../style/hero.css";
 import "../../style/heroRes.css";
-// import Back from "../../assets/background.mp4";
-import { DownOutlined } from "@ant-design/icons";
 
-const Hero: React.FC = () => {
-return (
+import { DownOutlined } from "@ant-design/icons";
+import Back from "../../assets/background.mp4"
+
+export default function Hero() {
+    return (
 <div className="heroBack">
-        <div className="vidBack">
-          </div>
+        {Back ? (
+        <video className="vidBack" loop={true} autoPlay={true} muted>
+          <source src={Back} type="video/mp4" />
+        </video>
+        ) : <div className="vidBack">
+          </div>}
         <div className="name">
           <h1>
             Darrell <br /> Roberts
@@ -19,7 +24,7 @@ return (
           <DownOutlined
             onClick={() =>
               window.scrollTo({
-                top: 1000,
+                top: 1100,
                 behavior: "smooth",
               })
             }
@@ -29,7 +34,5 @@ return (
           </div>
         </div>
       </div>
-)
+    )
 }
-
-export default Hero
