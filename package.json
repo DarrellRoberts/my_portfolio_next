@@ -11,6 +11,8 @@
   "dependencies": {
     "antd": "^5.13.3",
     "next": "14.1.0",
+    "next-video": "^0.12.1",
+    "next-videos": "^1.4.1",
     "rc-banner-anim": "^2.4.5",
     "rc-queue-anim": "^2.0.0",
     "react": "^18",

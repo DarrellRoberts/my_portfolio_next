@@ -68,7 +68,7 @@ Start
 <a
 onClick={() =>
     window.scrollTo({
-    top: 1000,
+    top: 1100,
     behavior: "smooth",
         })
 }>
@@ -78,7 +78,7 @@ className={`listHeader ${startFade ? "animate" : "hidden"}`}>
 <a
 onClick={() =>
     window.scrollTo({
-    top: 1900,
+    top: 2000,
     behavior: "smooth",
         })
 }
@@ -88,7 +88,7 @@ Portfolio</li></a>
 <a              
 onClick={() =>
     window.scrollTo({
-    top: 2700,
+    top: 2800,
     behavior: "smooth",
         })
 }>
@@ -99,7 +99,7 @@ Fähigkeiten</li>
 <a
 onClick={() =>
     window.scrollTo({
-    top: 3500,
+    top: 3600,
     behavior: "smooth",
         })
 }
