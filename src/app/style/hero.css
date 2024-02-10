@@ -31,10 +31,7 @@
       line-height: 200px;
       text-align: center;
       text-shadow: rgb(0, 0, 0) 5px 5px 30px;
-      animation-name: shadowAnimate;
-      animation-duration: 10s;
-      animation-iteration-count: infinite;
-      animation-timing-function: linear;
+      animation: 1s linear 0s fadeIn;
     }
     
     .name h2 {
@@ -43,6 +40,7 @@
       font-family: var(--main);
       text-decoration: underline;
       text-shadow: rgb(0, 0, 0) 5px 5px 30px;
+      animation: 1.2s linear 0s fadeIn;    
     }
     
     @keyframes shadowAnimate {
@@ -51,22 +49,13 @@
     100% {text-shadow: rgb(0, 0, 0) 5px 5px 30px}
     }
     
-    /* .Vcon {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-    } */
-    
     .V {
       color: white;
       margin-top: 5rem;
       font-size: 5rem;
       width: 5rem;
-      height: 5rem;
-      animation-name: arrowMove;
-      animation-duration: 2.5s;
-      animation-iteration-count: infinite;
-      animation-timing-function: linear;
+      /* height: 5rem; */
+      animation: 2.5s linear 0s arrowMove infinite, 1.5s linear 0s fadeIn;;
       cursor: pointer;
       align-self: center;
       justify-self: center;
@@ -79,3 +68,9 @@
       50% {transform: translateY(-50%)}
       0% {transform: translateY(0)}
     }
+
+    @keyframes fadeIn {
+      0% { opacity: 0};
+      90% { opacity: 0};
+      100% { opacity: 1};
+  }

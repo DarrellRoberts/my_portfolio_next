@@ -1,5 +1,7 @@
 "use client";
 
+import {useState, useEffect} from "react"
+
 import "../../style/hero.css";
 import "../../style/heroRes.css";
 
@@ -7,6 +9,16 @@ import { DownOutlined } from "@ant-design/icons";
 import Back from "../../assets/background.mp4"
 
 export default function Hero() {
+const [startFade, setStartFade] = useState(false)
+
+const handleFade = () => {
+  const time = setTimeout(() => {
+      setStartFade(true)
+  }, 100);
+  return () => clearTimeout(time)
+}
+
+useEffect(() => {handleFade()}, [])
     return (
 <div className="heroBack">
         {Back ? (
@@ -15,6 +27,7 @@ export default function Hero() {
         </video>
         ) : <div className="vidBack">
           </div>}
+        {startFade ? (
         <div className="name">
           <h1>
             Darrell <br /> Roberts
@@ -24,7 +37,7 @@ export default function Hero() {
           <DownOutlined
             onClick={() =>
               window.scrollTo({
-                top: 1100,
+                top: 1000,
                 behavior: "smooth",
               })
             }
@@ -33,6 +46,7 @@ export default function Hero() {
           
           </div>
         </div>
+        ) : null}
       </div>
     )
 }

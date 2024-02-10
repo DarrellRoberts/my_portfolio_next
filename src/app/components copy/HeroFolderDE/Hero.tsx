@@ -24,7 +24,7 @@ export default function Hero() {
           <DownOutlined
             onClick={() =>
               window.scrollTo({
-                top: 1100,
+                top: 1000,
                 behavior: "smooth",
               })
             }
