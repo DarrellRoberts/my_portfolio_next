@@ -4,6 +4,7 @@ import Database from "./Database";
 import Tools from "./Tools";
 import "../../style/skills.css";
 import "../../style/skillsRes.css";
+// bug
 
 const Skills = () => {
   return (
