@@ -38,8 +38,8 @@ const textData = [
     </Popover>
     </div>
     ),
-    link: "https://bookclub-brothers.netlify.app/",
-    Githublink:"https://github.com/DarrellRoberts/BookClubBrothers_Frontend"
+    link: "https://bookclub-brothers.vercel.app/",
+    Githublink:"https://github.com/DarrellRoberts/BookClubBrothers_Frontend_NextMigration"
     ,
     },
 {
