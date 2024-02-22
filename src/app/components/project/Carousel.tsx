@@ -25,12 +25,31 @@ content: "Use the arrows to navigate through my previous or ongoing projects.",
 title: 'Portfolio Carousel',
 },
 {
+  content: "Shark Explorer is a 3D-interactive website where the user can explore and learn about different species of sharks. Since childhood I've had a fascination with sharks and in 2012 I participated in a project for the conservation of Great White Sharks. I made this website as a tool to educate all ages of why we need them. I made this with vanilla JavaScript, the Three.js library and Vite.js. This is my current project so bear with me if it's not complete. Stay tuned!",
+  title: 'Shark Explorer (Solo Project - Current Project)',
+  stack: (
+  <div className="flex justify-evenly mt-3">
+    <Popover title="JavaScript">
+    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg" width="50" height="50" alt="JavaScript" />
+    </Popover>
+    <Popover title="Three.js"><img src="https://seeklogo.com/images/T/three-js-logo-07A32307F1-seeklogo.com.png" width="50" height="50" alt="Three.js" />
+    </Popover>
+    <Popover title="Vite">
+    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/vite-colored.svg" width="50" height="50" alt="Vite" />
+    </Popover>
+  </div>
+  ),
+  link: "https://shark-explorer.netlify.app/",
+  Githublink:"https://github.com/DarrellRoberts/shark_explorer"
+  ,
+  },
+{
   content: "The BookClub Brothers is a website I created that is dedicated to a bookclub I formed with my old school friends in 2020. We all live in different countries so formed the club as a way of keeping in touch, whilst also reading fantastic books. This is a Full Stack project and so far has the following capabilities: jwt account registration and login, Cloudinary photo upload, user statistics, submit and edit book ratings, new book suggestion and book randomiser. This is my current project so bear with me if it's not complete. Stay tuned!",
   title: 'The BookClub Brothers (Solo Project - Current Project)',
   stack: (
   <div className="flex justify-evenly mt-3">
-  <Popover title="React">
-  <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg" width="50" height="50" alt="React" />
+  <Popover title="Next">
+  <a href="https://nextjs.org/docs" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nextjs-colored.svg" width="50" height="50" alt="NextJs" /></a>
   </Popover>
   <Popover title="TypeScript"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg" width="50" height="50" alt="TypeScript" />
   </Popover>
@@ -138,6 +157,12 @@ const dataArray:data[] = [
     map: "https://i.imgur.com/UfNLSSP.png",
     color: '#298e89',
     background: '#207673',
+  },
+  {
+    pic:'',
+    map: "https://i.imgur.com/N0XqRYC.png",
+    color: '#009dc4',
+    background: '#005b72',
   },
   {
     pic:'',
@@ -252,7 +277,7 @@ const Carousel = ({ className = 'details-switch-demo' }) => {
           <img src={`${item.map}`} alt="" width="100%" />
         </div>
         <div className={`${className}-pic pic${i}`} key="pic">
-          <img src={item.pic} alt="" width="100%" />
+          <img src={item.pic} alt="" width="400px" />
         </div>
       </QueueAnim>
     </Element>

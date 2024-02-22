@@ -24,13 +24,32 @@ const textData = [
     title: 'Portfolio',
   },
   {
-    content: "Die BookClub Brothers ist eine Website, die ich erstellt habe und die meinem Buchclub gewidmet ist, den ich 2020 mit meinen alten Schulfreunden gegründet habe. Wir leben alle in verschiedenen Ländern, daher haben wir den Club als Möglichkeit geschaffen, in Kontakt zu bleiben, während wir gleichzeitig fantastische Bücher lesen. Dies ist ein Full-Stack-Projekt und verfügt bisher über folgende Funktionen: JWT-Kontoanmeldung und -anmeldung, Cloudinary-Fotoupload, Benutzerstatistiken, Einreichen und Bearbeiten von Buchbewertungen, neue Buchvorschläge und Buchzufallsgenerator.",
-    title: 'The BookClub Brothers (Soloprojekt)',
+    content: "Shark Explorer ist eine 3D-interaktive Website, auf der der Benutzer verschiedene Haiarten erkunden und kennenlernen kann. Seit meiner Kindheit bin ich fasziniert von Haien, und 2012 habe ich an einem Projekt zur Erhaltung von Weißen Haien teilgenommen. Ich habe diese Website als Werkzeug erstellt, um Menschen jeden Alters zu erklären, warum wir sie brauchen. Ich habe dies mit reinem JavaScript, der Three.js-Bibliothek und Vite.js gemacht.",
+    title: 'Shark Explorer (Soloprojekt - Aktuelles Projekt)',
     stack: (
     <div className="flex justify-evenly mt-3">
-    <Popover title="React">
-    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg" width="50" height="50" alt="React" />
-    </Popover>
+      <Popover title="JavaScript">
+      <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg" width="50" height="50" alt="JavaScript" />
+      </Popover>
+      <Popover title="Three.js"><img src="https://seeklogo.com/images/T/three-js-logo-07A32307F1-seeklogo.com.png" width="50" height="50" alt="Three.js" />
+      </Popover>
+      <Popover title="Vite">
+      <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/vite-colored.svg" width="50" height="50" alt="Vite" />
+      </Popover>
+    </div>
+    ),
+    link: "https://shark-explorer.netlify.app/",
+    Githublink:"https://github.com/DarrellRoberts/shark_explorer"
+    ,
+    },
+  {
+    content: "Die BookClub Brothers ist eine Website, die ich erstellt habe und die meinem Buchclub gewidmet ist, den ich 2020 mit meinen alten Schulfreunden gegründet habe. Wir leben alle in verschiedenen Ländern, daher haben wir den Club als Möglichkeit geschaffen, in Kontakt zu bleiben, während wir gleichzeitig fantastische Bücher lesen. Dies ist ein Full-Stack-Projekt und verfügt bisher über folgende Funktionen: JWT-Kontoanmeldung und -anmeldung, Cloudinary-Fotoupload, Benutzerstatistiken, Einreichen und Bearbeiten von Buchbewertungen, neue Buchvorschläge und Buchzufallsgenerator.",
+    title: 'The BookClub Brothers (Soloprojekt - Aktuelles Projekt)',
+    stack: (
+    <div className="flex justify-evenly mt-3">
+  <Popover title="Next">
+  <a href="https://nextjs.org/docs" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nextjs-colored.svg" width="50" height="50" alt="NextJs" /></a>
+  </Popover>
     <Popover title="TypeScript"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg" width="50" height="50" alt="TypeScript" />
     </Popover>
     <Popover title="Tailwind CSS">
@@ -137,6 +156,12 @@ const dataArray:data[] = [
     map: "https://i.imgur.com/UfNLSSP.png",
     color: '#298e89',
     background: '#207673',
+  },
+  {
+    pic:'',
+    map: "https://i.imgur.com/N0XqRYC.png",
+    color: '#009dc4',
+    background: '#005b72',
   },
   {
     pic:'',
