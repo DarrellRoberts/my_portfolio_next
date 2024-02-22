@@ -90,7 +90,7 @@ Portfolio</li></a>
 <a              
 onClick={() =>
     window.scrollTo({
-    top: 2800,
+    top: 2700,
     behavior: "smooth",
         })
 }>
